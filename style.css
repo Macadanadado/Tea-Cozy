@@ -1,0 +1,115 @@
+* {
+    font-family: Helvetica;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+    opacity: 0.9;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    
+    font-size: 22px;
+   
+}
+
+/*header*/
+header {
+    height: 69px;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    z-index: 1;
+    position: fixed;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+    margin: 10px;
+    float: left;
+}
+
+.markers {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 600px;
+    text-decoration: underline;
+}
+
+.tab {
+    
+    color: seashell;
+}
+
+/*main body*/
+main {
+    position: relative;
+    top: 70px;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+/*Mission section*/
+
+
+.banner {
+    background-image: url('./Resources/mission-background.jpg');
+    height: 700px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.mission {
+    background-color: black;
+    width: 1200px;
+}
+
+/*Tea of the month section*/
+.item {
+    width:300px;
+    height:200px;
+    margin: 10px;
+}
+
+.teas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#berry,
+#rum,
+#donut,
+#myrtle,
+#bedford {
+    margin-top: 0px;
+}
+
+/*Locations*/
+#locations {
+    background-image: url('./Resources/locations-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 1200px;
+}
+
+#city {
+    display: flex;
+    justify-content: center space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    opacity: 1;
+    margin: 15px 20px;
+    width: 300px;
+}

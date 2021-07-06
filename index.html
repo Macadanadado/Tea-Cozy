@@ -7,55 +7,80 @@
     <body>
         <header>
             <img class='logo' src='./Resources/logo.png'/>
-            <nav>
-                <ul>
-                    <li>Mission</li>
-                    <li>Featured Tea</li>
-                    <li>Locations</li>
-                </ul>
-            </nav>
+            <div class='markers'>
+                <div class='tab'>
+                    <a href="#mission">Mission</a>
+                </div>
+                <div class='tab'>
+                    <a href="#featured">Featured Tea</a>
+                </div>
+                <div class='tab'>
+                    <a href="#locations">Locations</a>
+                </div>
+            </div>
         </header>
         <main>
 
             <!--banner section-->
-            <div class='banner'>
-                <h2>Our Mission</h2>
-                <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+            <div class='container'>
+                <div id='mission' class='banner'>
+                    <div class='mission'>
+                        <h2>Our Mission</h2>
+                        <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+                    </div>
+                </div>
             </div>
 
             <!--Tea of the month section-->
-            <div class='monthly'>
+            <div id='featured'>
                 <h2>Tea of the Month</h2>
                 <h4>What's Steeping at The Tea Cozy?</h4>
-                <ul>
-                    <li id='berry'>Fall Berry Blitz Tea</li>
-                    <li id='rum'>Spiced Rum Tea</li>
-                    <li id='donut'>Seasonal Donuts</li>
-                    <li id='myrtle'>Myrtle Ave Tea</li>
-                    <li id='bedford'>Bedford Bizarre Tea</li>
-                </ul>
+                <div class='teas'>
+                    <div>
+                        <img class='item' src='./Resources/berryblitz.jpg'/>
+                        <p id='berry'>Fall Berry Blitz Tea</p>
+                    </div>
+                    <div>
+                        <img class='item' src='./Resources/spiced-rum.jpg'/>
+                        <p id='rum'>Spiced Rum Tea</p>
+                    </div>
+                    <div>
+                        <img class='item' src='./Resources/donut.jpg'/>
+                        <p id='donut'>Seasonal Donuts</p>
+                    </div>
+                    <div>
+                        <img class='item' src='./Resources/myrtle-ave.jpg'/>
+                        <p id='myrtle'>Myrtle Ave Tea</p>
+                    </div>
+                    <div>
+                        <img class='item' src='./Resources/bedford-bizarre.jpg'/>
+                        <p id='bedford'>Bedford Bizarre Tea</p>
+                    </div>
+                </div>
             </div>
 
             <!--Locations section-->
-            <div class='locations'>
+            <div id='locations'>
                 <h2>Locations</h2>
-                <div class='city'>
-                    <h3>Downtown</h3>
-                    <p>384 West 4th St</p>
-                    <p>Suite 108</p>
-                    <p>Portland, Maine</p>
-                </div>
-                <div class='city'>
-                    <h3>East Bayside</h3>
-                    <p>3433 Phisherman's Avenue</p>
-                    <p>(Northest Corner)</p>
-                    <p>Portland, Maine</p>
-                </div>
-                <div class='city'>
-                    <h3>Oakdale</h3>
-                    <p>515 Crescent Avenue</p>
-                    <p>Second Floor</p>
-                    <p>Portland, Maine</p>
+                <div id='city'>
+                    <div class='address'>
+                        <h3>Downtown</h3>
+                        <p>384 West 4th St</p>
+                        <p>Suite 108</p>
+                        <p>Portland, Maine</p>
+                    </div>
+                    <div class='address'>
+                        <h3>East Bayside</h3>
+                        <p>3433 Phisherman's Avenue</p>
+                        <p>(Northest Corner)</p>
+                        <p>Portland, Maine</p>
+                    </div>
+                    <div class='address'>
+                        <h3>Oakdale</h3>
+                        <p>515 Crescent Avenue</p>
+                        <p>Second Floor</p>
+                        <p>Portland, Maine</p>
+                    </div>
                 </div>
             </div>
         </main>
