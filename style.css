@@ -9,21 +9,21 @@
 }
 
 html {
-    
     font-size: 22px;
-   
 }
 
 /*header*/
 header {
     height: 69px;
     width: 100%;
-    top: 0;
     border-bottom: 1px solid seashell;
     background-color: black;
     z-index: 1;
     position: fixed;
-    justify-content: space-between;
+}
+
+header a {
+    margin: 10px;
 }
 
 .logo {
@@ -34,14 +34,8 @@ header {
 
 .markers {
     display: flex;
-    justify-content: space-around;
-    margin: 0 600px;
-    text-decoration: underline;
-}
-
-.tab {
-    
-    color: seashell;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 /*main body*/
@@ -54,10 +48,10 @@ main {
 .container {
     display: flex;
     justify-content: center;
+    flex-shrink: 2;
+    margin-bottom: 3.5rem;
 }
 /*Mission section*/
-
-
 .banner {
     background-image: url('./Resources/mission-background.jpg');
     height: 700px;
@@ -71,11 +65,14 @@ main {
     width: 1200px;
 }
 
+.mission h2,
+.mission h4 {
+    margin: 15px;
+}
+
 /*Tea of the month section*/
-.item {
-    width:300px;
-    height:200px;
-    margin: 10px;
+#featured {
+    width: 1000px;
 }
 
 .teas {
@@ -85,15 +82,24 @@ main {
     align-items: flex-start;
 }
 
-#berry,
-#rum,
-#donut,
-#myrtle,
-#bedford {
-    margin-top: 0px;
+.item {
+    width:300px;
+    height:200px;
+    margin: 10px;
 }
 
 /*Locations*/
+/*#city {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: black;
+    opacity: 1;
+    margin: 15px 20px;
+    width: 300px;
+}*/
+
 #locations {
     background-image: url('./Resources/locations-background.jpg');
     background-repeat: no-repeat;
@@ -103,13 +109,33 @@ main {
     width: 1200px;
 }
 
-#city {
-    display: flex;
-    justify-content: center space-around;
-    align-items: center;
-    flex-direction: column;
-    background-color: black;
-    opacity: 1;
-    margin: 15px 20px;
+#locations h2 {
+    background-color: hidden;
+}
+
+.address {
     width: 300px;
+    margin: 15px 20px;
+    padding: 1rem 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/*footer*/
+footer {
+    position: relative;
+    top: 70px;
+    margin-top: 2rem;
+}
+
+footer h2,
+footer h5 {
+    margin: 2rem;
+}
+
+.copyright {
+   text-align: left;
+   position: relative;
+   left: 20px;
 }
